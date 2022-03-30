@@ -1,0 +1,91 @@
+{
+ "properties": {
+  "displayName": "Top Level Tagging",
+  "policyType": "Custom",
+  "description": "",
+  "metadata": {
+   "createdBy": "8822ef1f-b2ee-4eaf-a148-3f9867fe439a",
+   "createdOn": "2022-03-30T01:53:15.1826593Z",
+   "updatedBy": "8822ef1f-b2ee-4eaf-a148-3f9867fe439a",
+   "updatedOn": "2022-03-30T02:24:08.5958378Z"
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Multi-Select For Resource Group : Environment Tag_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootGroup/providers/Microsoft.Authorization/policyDefinitions/9432d7b0-be21-4200-95cb-954bbf2621cf",
+    "parameters": {
+     "listofallowedtagValues": {
+      "value": [
+       "Dev",
+       "Non-Prod",
+       "Prod"
+      ]
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Require a tag on resources_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/871b6d14-10aa-478d-b590-94f262ecfa99",
+    "parameters": {
+     "tagName": {
+      "value": "Name"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Require a tag on resources_2",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/871b6d14-10aa-478d-b590-94f262ecfa99",
+    "parameters": {
+     "tagName": {
+      "value": "Purpose"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Multi-Select For Resources : Environment Tag_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootGroup/providers/Microsoft.Authorization/policyDefinitions/82298463-40fd-4133-8baf-a0bc0b3b31fa",
+    "parameters": {
+     "tagName": {
+      "value": "Environment"
+     },
+     "tagValue": {
+      "value": [
+       "Dev",
+       "Non-Prod",
+       "Prod"
+      ]
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Require a tag on resource groups_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/96670d01-0a4d-4649-9c89-2d3abc0a5025",
+    "parameters": {
+     "tagName": {
+      "value": "Name"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Require a tag on resource groups_2",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/96670d01-0a4d-4649-9c89-2d3abc0a5025",
+    "parameters": {
+     "tagName": {
+      "value": "Purpose"
+     }
+    },
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/RootGroup/providers/Microsoft.Authorization/policySetDefinitions/efbac4812755420db731aa77",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "efbac4812755420db731aa77"
+}
